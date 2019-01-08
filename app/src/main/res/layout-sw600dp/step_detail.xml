@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+    <ImageView
+        android:id="@+id/thumbnail_image"
+        android:layout_width="@dimen/tzzdp"
+        android:layout_height="@dimen/tzzdp"
+        android:layout_marginEnd="@dimen/eightdp"
+        android:layout_marginStart="@dimen/eightdp"
+        android:layout_marginTop="@dimen/eightdp"
+        android:src="@drawable/novideos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tzzdp"
+        android:layout_marginBottom="@dimen/eightdp"
+        android:layout_marginEnd="@dimen/eightdp"
+        android:layout_marginStart="@dimen/eightdp"
+        android:layout_marginTop="@dimen/eightdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/exo_controls_next_description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/onesixdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_view"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="@dimen/oneonesp"
+        android:layout_height="@dimen/sfdp"
+        android:layout_marginEnd="@dimen/onesixsp"
+        android:layout_marginBottom="@dimen/eightdp"
+        android:src="@drawable/next"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/prev_button"
+        android:layout_width="@dimen/nndp"
+        android:layout_height="@dimen/sfdp"
+        android:layout_marginStart="@dimen/onesixsp"
+        android:layout_marginEnd="@dimen/eightdp"
+        android:layout_marginBottom="@dimen/eightdp"
+        android:src="@drawable/previous"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

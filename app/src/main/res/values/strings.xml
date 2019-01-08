@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BakingApp</string>
+    <string name="test_text_recipe">Recipe Title</string>
+    <string name="title_step_list">Steps</string>
+    <string name="title_step_detail">Step Detail</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="nointernet">Ohhh No Internet</string>
+    <string name="nointernetmsg">Connect to Internet Click Yes to Close App</string>
+    <string name="yes">Go to Settings</string>
+    <string name="getdata">Getting Data!</string>
+    <string name="plswait">Please wait a while...</string>
+    <string name="error">Error Loading!</string>
+    <string name="steps">Steps</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="next_track">Next track</string>
+    <string name="close">Close</string>
+
+</resources>
